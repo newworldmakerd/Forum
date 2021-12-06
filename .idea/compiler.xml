@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lyh_forum" />
+        <module name="javaWebTest01" />
       </profile>
     </annotationProcessing>
   </component>

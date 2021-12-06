@@ -1,4 +1,4 @@
-package net.lyhclass.forum.util;
+package net.lyh.forum.util;
 
 import org.apache.commons.dbcp2.BasicDataSourceFactory;
 
