@@ -1,4 +1,4 @@
-package net.lyhclass.forum.domain;
+package net.lyh.forum.domain;
 
 import java.util.Date;
 

@@ -1,31 +1,35 @@
-package net.lyhclass.forum.domain;
+package net.lyh.forum.domain;
 
 import java.util.Date;
 
-public class Reply {
+public class Topic {
     private int id;
-    private int topicId;
-    private int floor;
+    private int cId;
+    private String title;
     private String content;
+    private int pv;
     private int userId;
     private String username;
     private String userImg;
     private Date createTime;
     private Date updateTime;
+    private int hot;
     private int delete;
 
     @Override
     public String toString() {
-        return "Reply{" +
+        return "Topic{" +
                 "id=" + id +
-                ", topicId=" + topicId +
-                ", floor=" + floor +
+                ", cId=" + cId +
+                ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
+                ", pv=" + pv +
                 ", userId=" + userId +
                 ", username='" + username + '\'' +
                 ", userImg='" + userImg + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", hot=" + hot +
                 ", delete=" + delete +
                 '}';
     }
@@ -38,20 +42,20 @@ public class Reply {
         this.id = id;
     }
 
-    public int getTopicId() {
-        return topicId;
+    public int getcId() {
+        return cId;
     }
 
-    public void setTopicId(int topicId) {
-        this.topicId = topicId;
+    public void setcId(int cId) {
+        this.cId = cId;
     }
 
-    public int getFloor() {
-        return floor;
+    public String getTitle() {
+        return title;
     }
 
-    public void setFloor(int floor) {
-        this.floor = floor;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getContent() {
@@ -60,6 +64,14 @@ public class Reply {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public int getPv() {
+        return pv;
+    }
+
+    public void setPv(int pv) {
+        this.pv = pv;
     }
 
     public int getUserId() {
@@ -100,6 +112,14 @@ public class Reply {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public int getHot() {
+        return hot;
+    }
+
+    public void setHot(int hot) {
+        this.hot = hot;
     }
 
     public int getDelete() {

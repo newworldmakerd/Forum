@@ -1,4 +1,4 @@
-package net.lyhclass.forum.util;
+package net.lyh.forum.util;
 
 import org.apache.commons.dbcp2.BasicDataSourceFactory;
 
@@ -11,7 +11,7 @@ public class DataSourceUtil {
     private static DataSource dataSource;
     static {
         try{
-            InputStream in = DataSourceUtil.class.getClassLoader().getResourceAsStream("DataBase.properties");
+            InputStream in = DataSourceUtil.class.getClassLoader().getResourceAsStream("database.properties");
             Properties p=new Properties();
             p.load(in);
             dataSource = BasicDataSourceFactory.createDataSource(p);
